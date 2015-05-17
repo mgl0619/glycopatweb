@@ -88,16 +88,7 @@ public class FileUpload extends HttpServlet {
         if(fieldname!=null){
            session.setAttribute(fieldname, filename);
         }
-        
-        /*String protseqfilename=request.getParameter("protseqfilename");
-		String fixedptmfilename=request.getParameter("fixedptmfilename");
-		String variableptmfilename=request.getParameter("variableptmfilename");
-		String enzname=request.getParameter("enz");
-		System.out.println("Protein FASTA File: " + protseqfilename);
-		System.out.println("Fixed Protein Modification File: "+ fixedptmfilename);
-		System.out.println("Variable Protein Modification File: "+ variableptmfilename);
-		System.out.println(enzname);*/
-   }
+    }
 }
 
 

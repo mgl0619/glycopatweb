@@ -16,14 +16,14 @@ html {
 
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 10px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
 
     .top-nav-collapse {
-        padding: 0;
+        padding: 20;
     }
 }
 
@@ -33,28 +33,43 @@ of those sections to manage the look and feel of the site. */
 
 .intro-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #fff;
 }
 
-.about-section {
+.digest-section {
     height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #eee;
+    padding-top: 100px;
+    text-align: left;
+    background: #fff;
 }
 
-.services-section {
+.tandem-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
+    text-align: center;
+    background: #fff;
+}
+
+.frag-section {
+    height: 100%;
+    padding-top: 100px;
+    text-align: center;
+    background: #fff;
+}
+
+
+.help-section {
+    height: 100%;
+    padding-top: 100px;
     text-align: center;
     background: #fff;
 }
 
 .contact-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
-    background: #eee;
+    background: #fff;
 }

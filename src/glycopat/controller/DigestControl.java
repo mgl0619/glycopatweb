@@ -55,11 +55,18 @@ public class DigestControl extends HttpServlet {
 			int maxPepLen=Integer.parseInt(request.getParameter("maxPepLen"));
 			int minPTM=Integer.parseInt(request.getParameter("minPTM"));
 			int maxPTM=Integer.parseInt(request.getParameter("maxPTM"));
+			session.setAttribute("missedMax", missedMax);
+			session.setAttribute("minPepLen", minPepLen);
+			session.setAttribute("maxPepLen", maxPepLen);
+			session.setAttribute("minPTM", minPTM);
+			session.setAttribute("maxPTM", maxPTM);			
+			
 			System.out.println(missedMax);
 			System.out.println(minPepLen);
 			System.out.println(maxPepLen);
 			System.out.println(minPTM);
 			System.out.println(maxPTM);
+						
 			Digest digesttest1=null;
 			String digpepstring="";
 			RequestDispatcher view = null;
@@ -69,7 +76,7 @@ public class DigestControl extends HttpServlet {
 						 fixedptmfilename,variableptmfilename,enzname,
 						 missedMax,minPepLen,maxPepLen,minPTM,maxPTM);
 				request.setAttribute("digest", digpepstring);
-				view = request.getRequestDispatcher("index.jsp");
+				view = request.getRequestDispatcher("digest.jsp");
 				view.forward(request, response);
 			} catch (Exception e){
 				// TODO Auto-generated catch block
